@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+            <meta charset="utf-8">
+            <title>Tabs - Roadmaps</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="Roadmaps">
+            <meta name="robots" content="index, follow">
+            <link href="./dist/styles.css" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+            <!-- <link rel="canonical" href="https://monsite.com/page" /> -->
+            <script src="index.js" defer></script>
+    </head>
+    <body>
+        <div class="flex items-center justify-center h-screen">
+            <div class="border-2 border-black rounded-lg w-5/12 p-4 space-x-3">
+                <!-- Boutons des onglets -->
+                <button id="1" class="border-b-2 border-black hover:border-red-600">First Tab</button>
+                <button id="2" class="hover:text-black border-b-2 border-black hover:border-red-600">Second Tab</button>
+                <button id="3" class="hover:text-black border-b-2 border-black hover:border-red-600">Third Tab</button>
+                <button id="4" class="hover:text-black border-b-2 border-black hover:border-red-600">Fourth Tab</button>
+
+                <!-- Contenu des onglets -->
+
+                <p class="pt-3 pb-3">Clicking each tab should hide the content of the other tab and show the
+                    content of clicked tab. By default, enable the first tab.</p>
+                <div id="contentFirst" class="tab-content p-20 text-white bg-black rounded-lg text-center"><span class="text-red-600">First</span> Tab content to be displayed here.</div>
+                <div id="contentSecond" class="tab-content hidden p-20 text-white bg-black rounded-lg text-center"><span class="text-red-600">Second</span> Tab content to be displayed here.</div>
+                <div id="contentThird" class="tab-content hidden p-20 text-white bg-black rounded-lg text-center"><span class="text-red-600">Third</span> Tab content to be displayed here.</div>
+                <div id="contentFourth" class="tab-content hidden p-20 text-white bg-black rounded-lg text-center"><span class="text-red-600">Fourth</span> Tab content to be displayed here.</div>
+                <p class="pt-3">Add some dummy content or just add a simple text showing the <span class="text-red-600">tab</span>.</p>
+            </div>
+        </div>
+    </body>
+</html>
